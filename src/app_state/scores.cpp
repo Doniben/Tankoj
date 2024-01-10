@@ -47,11 +47,11 @@ void Scores::draw()
     SDL_Rect dst;
 
     p_dst = {-1, 10};
-    renderer->drawText(&p_dst, std::string("STAGE ") + Engine::intToString(m_level), {255, 255, 220, 255}, 1);
+    renderer->drawText(&p_dst, std::string("NIVELO ") + Engine::intToString(m_level), {255, 255, 220, 255}, 1);
     p_dst = {100, 50};
-    renderer->drawText(&p_dst, std::string("PLAYER"), {255, 255, 255, 255}, 2);
+    renderer->drawText(&p_dst, std::string("LUDANTO"), {255, 255, 255, 255}, 2);
     p_dst = {270, 50};
-    renderer->drawText(&p_dst, std::string("SCORE"), {255, 255, 255, 255}, 2);
+    renderer->drawText(&p_dst, std::string("POENTARO"), {255, 255, 255, 255}, 2);
     dst = {75, 75, 300, 2};
     renderer->drawRect(&dst, {250, 250, 200, 255}, true);
     int i = 0;
