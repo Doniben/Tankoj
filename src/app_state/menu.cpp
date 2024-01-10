@@ -9,9 +9,9 @@
 
 Menu::Menu()
 {
-    m_menu_texts.push_back("1 Player");
-    m_menu_texts.push_back("2 Players");
-    m_menu_texts.push_back("Exit");
+    m_menu_texts.push_back("1 Ludanto");
+    m_menu_texts.push_back("2 Ludantoj");
+    m_menu_texts.push_back("Eliri");
     m_menu_index = 0;
     m_tank_pointer = new Player(0, 0 , ST_PLAYER_1);
     m_tank_pointer->direction = D_RIGHT;
