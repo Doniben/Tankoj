@@ -78,7 +78,7 @@ void Game::draw()
 
     if(m_level_start_screen)
     {
-        std::string level_name = "STAGE " + Engine::intToString(m_current_level);
+        std::string level_name = "NIVELO " + Engine::intToString(m_current_level);
         renderer->drawText(nullptr, level_name, {255, 255, 255, 255}, 1);
     }
     else
@@ -130,7 +130,7 @@ void Game::draw()
         renderer->drawText(&p_dst, Engine::intToString(m_current_level), {0, 0, 0, 255}, 2);
 
         if(m_pause)
-            renderer->drawText(nullptr, std::string("PAUSE"), {200, 0, 0, 255}, 1);
+            renderer->drawText(nullptr, std::string("HALTI"), {200, 0, 0, 255}, 1);
     }
 
     renderer->flush();
